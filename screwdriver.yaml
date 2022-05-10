@@ -1,0 +1,12 @@
+shared:
+  image: centos:centos7
+
+jobs:
+  enable:
+    requires: [ ~commit, ~pr ]
+    steps:
+      - echo: echo hoge
+  disable:
+    requires: [ ~commit, ~pr ]
+    steps:
+      - echo: echo hoge
